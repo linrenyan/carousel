@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="carousel">
+        <div class="wrapper">
+            <!-- 图片数量需为奇数 -->
+            <img src="./images/1.jpg" alt="">
+            <img src="./images/2.jpg" alt="">
+            <img src="./images/3.jpg" alt="">
+            <img src="./images/2.jpg" alt="">
+            <img src="./images/3.jpg" alt="">
+            
+        </div>
+        <div class="btnWrap">
+            <span class="btn" id="left"></span>
+            <span class="btn" id="right"></span>
+        </div>
+    </div>
+    <script src="./js/jquery-1.8.2.min.js"></script>
+    <script src="./carousel.js"></script>
+    <script>
+        $(".carousel").carousel({
+            curDisplay: 4, // 设置第几张图片为第一张
+            auto: true, //是否自动轮播
+            controlRotate: true,    //是否旋转显示
+            backFn: function (p) {  //回调函数
+                console.log(p)
+            }
+        })
+    </script>
+</body>
+
+</html>
