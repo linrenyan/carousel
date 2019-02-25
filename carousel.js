@@ -151,7 +151,7 @@
                 curDisplay: 0, // 设置第几张图片为第一张
                 auto: true, //是否自动轮播
                 controlRotate: true,    //是否旋转显示
-                backFn: function () {}
+                
             },options);
             init(this,args);
         }
